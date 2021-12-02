@@ -1,0 +1,15 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trackItem {
+  border-radius: 5px;
+  color: white;
+  padding: 15px 20px;
+  margin: 15px 0;
+}
+.highlightItem {
+  background-color: #debc5b;
+  margin: 0;
+}

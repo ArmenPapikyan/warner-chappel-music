@@ -1,0 +1,85 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 13px;
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.my-container {
+    padding: 0 80px;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.fw-bold {
+    font-weight: 500;
+}
+.pt-6 {
+    padding-top: 4rem;
+}
+ul,ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+.fz-small {
+    font-size: .8rem;
+}
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader .gif {
+    position: relative;
+    z-index: 10;
+}
+.loader::after {
+    background-color: black;
+    content: '';
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 960px;
+    }
+}
+@media (max-width: 768px) {
+    .my-container {
+        padding: 0 15px;
+    }
+}
